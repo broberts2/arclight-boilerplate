@@ -1,6 +1,6 @@
 git pull origin master
 cd /arclight.cc
 npm run build
-rm -rf /var/www/arclight.cc/html/build
-mv build /var/www/arclight.cc/html
+rm -rf /var/www/html/arclight.cc/build
+mv build /var/www/html/arclight.cc
 sudo systemctl restart httpd.service
