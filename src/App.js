@@ -1,5 +1,4 @@
 import React from "react";
-import { Header, Particles } from "arclight-react";
 import { Home } from "./components/index";
 
 export default function App() {
