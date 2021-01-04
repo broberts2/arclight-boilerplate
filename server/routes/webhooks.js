@@ -1,9 +1,8 @@
-const shell = require("shelljs");
+const { exec } = require("child_process");
 
 module.exports = (app, pretext) => {
   app.post(`/gitUpdate`, async (req, res) => {
-    shell.exec("/opt/merge.sh");
+    exec("/opt/merge.sh");
     res.json("success");
-    //
   });
 };
