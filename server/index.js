@@ -28,8 +28,6 @@ if (config.production) {
   server = require("http").createServer(app);
 }
 
-//test
-
 server.listen(config.port, () =>
   console.log(
     `--------------------------------------------------------------` +
