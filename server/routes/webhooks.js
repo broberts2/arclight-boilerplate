@@ -1,8 +1,8 @@
-const { exec } = require("child_process");
+const { spawn } = require("child_process");
 
 module.exports = (app, pretext) => {
   app.post(`/gitUpdate`, async (req, res) => {
-    exec("echo running merge");
+    const ls = spawn("ls");
     res.json("success"); //
   });
 };
